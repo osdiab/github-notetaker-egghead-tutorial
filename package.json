@@ -10,7 +10,8 @@
 		"clean": "rm -rf __build",
 		"build": "npm run clean && npm run tsc --",
 		"watch": "npm run build -- -w",
-		"start:ios": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'"
+		"start:ios": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'",
+		"start:android": "npm run build && concurrently -r 'npm run watch' 'react-native run-android'"
 	},
 	"dependencies": {
 		"@types/jest": "^19.2.3",
