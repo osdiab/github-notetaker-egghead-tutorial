@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "node",
+        "jsx": "react-native",
+        "outDir": "__build",
+        "rootDir": "src",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "types": [
+        "react",
+        "react-native",
+        "jest"
+    ],
+    "exclude": [
+        "android",
+        "ios",
+        "__build",
+        "node_modules"
+    ]
+}

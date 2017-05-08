@@ -1,0 +1,35 @@
+{
+	"name": "GithubNotetaker",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"lint": "tslint ./src/**/*.ts ./src/**/*.tsx",
+		"test": "jest",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"tsc": "tsc",
+		"clean": "rm -rf __build",
+		"build": "npm run clean && npm run tsc --",
+		"watch": "npm run build -- -w",
+		"start:ios": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'"
+	},
+	"dependencies": {
+		"@types/jest": "^19.2.3",
+		"@types/react": "^15.0.24",
+		"@types/react-native": "^0.43.11",
+		"concurrently": "^3.4.0",
+		"react": "16.0.0-alpha.6",
+		"react-native": "0.44.0",
+		"typescript": "^2.3.2"
+	},
+	"devDependencies": {
+		"jest": "20.0.0",
+		"react-test-renderer": "16.0.0-alpha.6",
+		"tslint": "^5.2.0",
+		"tslint-eslint-rules": "^4.0.0",
+		"tslint-microsoft-contrib": "^4.0.1",
+		"tslint-react": "^3.0.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
